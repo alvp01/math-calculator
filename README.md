@@ -2,6 +2,14 @@
 
 Microverse first react project
 
+## About the project
+
+![calculator](./app.jpg)
+
+This project was made to learn the basics of the React library and Sigle Page Application design pattern. <br>
+<br>
+This app is a simple calculator to make basic math operations and display the results on the screen. In the future this app will be a full dynamic website with a home page, a quote page and the calculator.
+
 ## Learning objetives
 
 - Learn to setup a React project
