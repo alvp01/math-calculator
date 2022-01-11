@@ -8,18 +8,45 @@
 .screen,
 .keyboard,
 .container,
-.calculator-body {
+.nav-links,
+.calculator-body,
+.navbar-container {
   display: flex;
 }
 
 .keyboard,
-.calculator-body {
+.calculator-body,
+.container {
   flex-direction: column;
+}
+
+.nav-bar,
+.navbar-container {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.navbar-container {
+  justify-content: space-around;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 10px;
 }
 
 .container {
   padding-top: 10em;
   justify-content: center;
+  align-items: center;
 }
 
 .calculator-body {
