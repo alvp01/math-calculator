@@ -1,9 +1,10 @@
 import React from 'react';
+import style from './Home.module.css';
 
 const Home = () => (
-  <div>
+  <div className={style.contentContainer}>
     <h1>Welcome to our page!</h1>
-    <div>
+    <div className={style.paragraphs}>
       <p>
         {`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
         incididunt ut labore et dolore magna aliqua. 

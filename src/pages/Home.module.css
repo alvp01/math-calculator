@@ -1,0 +1,27 @@
+.contentContainer,
+.paragraphs {
+  display: flex;
+}
+
+.contentContainer {
+  flex-direction: column;
+  max-width: 1024px;
+  align-items: flex-start;
+}
+
+.paragraphs {
+  width: 100%;
+  flex-direction: row;
+}
+
+.paragraphs p {
+  width: 46%;
+}
+
+p:first-child {
+  margin-right: 2%;
+}
+
+p:last-child {
+  margin-left: 2%;
+}
