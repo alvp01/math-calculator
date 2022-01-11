@@ -8,6 +8,7 @@ import {
 import CalculatorPage from './pages/CalculatorPage';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import Quote from './pages/Quote';
 
 const App = () => (
   <Router>
@@ -16,6 +17,7 @@ const App = () => (
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/quote" element={<Quote />} />
       </Routes>
     </div>
   </Router>
