@@ -1,4 +1,4 @@
-import operate from '../logic/operate'
+import operate from '../logic/operate';
 
 describe('Test the operate logic file', () => {
   test('It cannot devide by zero', () => {
