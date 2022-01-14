@@ -23,7 +23,7 @@ const Calculator = () => {
 
   return (
     <div className="calculator-body">
-      <div className="screen">
+      <div className="screen" data-testid="screen">
         { displayValues(calcObj) }
       </div>
       <div className="keyboard">
