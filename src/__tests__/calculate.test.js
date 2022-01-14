@@ -114,4 +114,14 @@ describe('Test the calculate logic', () => {
       total: null,
     });
   });
+
+  test('It works with decimal values', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '8'));
+    expect(calculate(operation, '.')).toEqual({
+      next: '8.',
+      operation: null,
+      total: null,
+    });
+  });
 });
