@@ -17,15 +17,19 @@ describe('Test components', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('Calculator page snapshop', ()=>{
+  test('Calculator page snapshop', () => {
     const tree = render(<CalculatorPage />);
     expect(tree).toMatchSnapshot();
   });
 
-  test('Calculator component test', ()=>{
+  test('Calculator component test', () => {
     const tree = render(<Calculator />);
     expect(tree).toMatchSnapshot();
     fireEvent.click(screen.getByText('1'));
     expect(screen.getByTestId('result')).toHaveTextContent('1');
+    fireEvent.click(screen.getByText('+'));
+    fireEvent.click(screen.getByText('2'));
+    fireEvent.click(screen.getByText('='));
+    expect(screen.getByTestId('result')).toHaveTextContent('3');
   });
 });
