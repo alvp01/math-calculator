@@ -5,9 +5,14 @@ import Quote from '../pages/Quote';
 import Home from '../pages/Home';
 import Calculator from '../components/Calculator';
 
-describe('Test home', ()=>{
-  test('Home snapshot', ()=>{
+describe('Test home', () => {
+  test('Home snapshot', () => {
     const tree = render(<Home />);
+    expect(tree).toMatchSnapshot();
+  });
+
+  test('Quote snapshot', () => {
+    const tree = render(<Quote />);
     expect(tree).toMatchSnapshot();
   });
 });
