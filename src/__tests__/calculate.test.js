@@ -92,4 +92,26 @@ describe('Test the calculate logic', () => {
       total: '4',
     });
   });
+
+  test('It does the modulus operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '8'));
+    Object.assign(operation, calculate(operation, '%'));
+    Object.assign(operation, calculate(operation, '2'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      operation: null,
+      total: '0',
+    });
+  });
+
+  test('It does the minus value operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '8'));
+    expect(calculate(operation, '+/-')).toEqual({
+      next: '-8',
+      operation: null,
+      total: null,
+    });
+  });
 });
