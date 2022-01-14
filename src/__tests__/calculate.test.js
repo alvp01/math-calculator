@@ -57,7 +57,7 @@ describe('Test the calculate logic', () => {
     });
   });
 
-  test('It assigns value to the next', () => {
+  test('It does the substraction operation', () => {
     Object.assign(operation, calculate(operation, 'AC'));
     Object.assign(operation, calculate(operation, '8'));
     Object.assign(operation, calculate(operation, '-'));
@@ -66,6 +66,30 @@ describe('Test the calculate logic', () => {
       next: null,
       operation: null,
       total: '3',
+    });
+  });
+
+  test('It does the multiplication operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '8'));
+    Object.assign(operation, calculate(operation, 'x'));
+    Object.assign(operation, calculate(operation, '5'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      operation: null,
+      total: '40',
+    });
+  });
+
+  test('It does the multiplication operation', () => {
+    Object.assign(operation, calculate(operation, 'AC'));
+    Object.assign(operation, calculate(operation, '8'));
+    Object.assign(operation, calculate(operation, '÷'));
+    Object.assign(operation, calculate(operation, '2'));
+    expect(calculate(operation, '=')).toEqual({
+      next: null,
+      operation: null,
+      total: '4',
     });
   });
 });
