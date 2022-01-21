@@ -1,0 +1,9 @@
+.contentContainer {
+  display: flex;
+  max-width: 70%;
+  flex-direction: row;
+}
+
+.contentContainer h2 {
+  margin-right: 50px;
+}
