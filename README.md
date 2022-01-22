@@ -23,6 +23,7 @@ This app is a simple calculator to make basic math operations and display the re
 
 ## Live Demos
 - [Heroku](https://math-calculator-alvp01.herokuapp.com)
+- [Netlify](https://hungry-jepsen-c1606a.netlify.app/)
 
 ## Setup
 
