@@ -21,6 +21,9 @@ This app is a simple calculator to make basic math operations and display the re
 - React
 - Npm as package manager
 
+## Live Demos
+- [Heroku](https://math-calculator-alvp01.herokuapp.com)
+
 ## Setup
 
 ```
